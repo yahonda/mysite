@@ -85,6 +85,7 @@ DATABASES = {
         'OPTIONS': {
             'charset': 'utf8mb4',
             'collation': 'utf8mb4_bin',
+            'init_command': 'SET @@tidb_allow_remove_auto_inc = ON',
         }
     }
 }
