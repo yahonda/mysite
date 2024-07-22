@@ -14,6 +14,8 @@ asgiref==3.8.1
     # via django
 django==4.2.14
     # via my-project
+django-tidb==4.2.4
+    # via my-project
 mysqlclient==2.2.4
     # via my-project
 sqlparse==0.5.1
