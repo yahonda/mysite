@@ -26,3 +26,8 @@ class Book(models.Model):
 
     class Meta:
         tidb_auto_id_cache = 1
+
+from django_tidb.fields import BigAutoRandomField
+class MyModel(models.Model):
+    id = BigAutoRandomField(primary_key=True)
+    title = models.CharField(max_length=200)
