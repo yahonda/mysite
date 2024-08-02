@@ -11,6 +11,8 @@ class Post(models.Model):
 
     def __str__(self):
         return f"Post: {self.title}"
+    class Meta:
+        ordering = ['-id']
 
 class Comment(models.Model):
     id = BigAutoRandomField(primary_key=True)
